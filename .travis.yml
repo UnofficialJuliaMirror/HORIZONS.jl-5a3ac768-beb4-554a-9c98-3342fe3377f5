@@ -34,7 +34,7 @@ addons:
   #   - telnet
   #   update: true
 
-before_script:
+before_script: |
   if [ "$TRAVIS_OS_NAME" == "windows" ]; then
 	  choco install telnet
   fi
